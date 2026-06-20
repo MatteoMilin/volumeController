@@ -44,10 +44,10 @@ void loop() {
 
     if (clk == LOW) {
       if (digitalRead(PIN_DT) == HIGH) {
-        bleKeyboard.write(KEY_MEDIA_VOLUME_UP);
+        bleKeyboard.write(KEY_MEDIA_VOLUME_DOWN);
         Serial.println("Volume +");
       } else {
-        bleKeyboard.write(KEY_MEDIA_VOLUME_DOWN);
+        bleKeyboard.write(KEY_MEDIA_VOLUME_UP);
         Serial.println("Volume -");
       }
     }
